@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+/* Week 3 */
+
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.container {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow:  0 0 0 0 rgba(255,255,255,1),
+                 0 0 0 0 rgb(255, 99, 99);
+                }
+        to {
+    box-shadow:  0 0 0 .65em rgba(255,255,255,1),
+                 0 0 0 1em rgb(255, 99, 99);
+                }
+}
+        
+#btn-bg:active {
+  animation: pulse 0.6s infinite ease-out;
+}
+
+#btn-bg {
+  width: 80px;
+  height: 80px;
+  background: #FF6363;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  border-bottom: 2px solid #543864;
+  border-top: 2px solid #f1f1f1;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+          
+#btn-ring {
+  position: absolute;
+  margin-left: .62em;
+  margin-top: .55em;
+  width: 42px;
+  height: 42px;
+  border: 8px solid #543864;
+  top: 10px;
+  left: 10px;
+  border-radius: 31px;
+}
+          
+#ring-line {
+  width: 10px;
+  height: 30px;
+  margin: -14px auto;
+  background: #543864;
+  border-radius: 5px;
+  border-right: 2px solid #FF6363;
+  border-left: 2px solid #FF6363;
+}
+
+/* Week 4 */
+
+#btn-group {
+  color: #fff;
+  display: inline-block;
+  padding-left: 16vw;
+}
+
+#btn-fade {
+  background-color: #334257;
+}
+
+#btn-bounce {
+  background-color: #476072;
+}
+
+#btn-rotate {
+  background-color: #548CA8;
+}
+
+@media only screen and (min-width: 768px) {
+
+  #btn-group {
+    display: inline-block;
+    margin-top: .5vw;
+    padding-top: 2vw;
+  }
+
+#btn-fade, #btn-bounce, #btn-rotate {
+  margin: .5vw;
+}
+}
+
+/* Week 5 */
+
+canvas { 
+  border: 1px solid black; 
+}
+
+.canvas {
+  text-align: center;
+}
+
+/* Week 6 */
+
+.video, .audio, #buttons {
+  text-align: center;
+}
+
+#mute, #rewind, #stop, #play, #fast-forward {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+}
+
+.audio {
+  margin: 3em;
+  padding: 3em;
+  background-image: linear-gradient(to right, #FF4848, #FFD371, #C2FFD9, #9DDAC6);
+  border-radius: 5px;
+  box-shadow: 5px 10px;
+}
+
+figcaption {
+  padding-bottom: 1em;
+  font-family: 'Comfortaa', cursive;
+}
+
+/* Week 7 */
+
+.player {
+  text-align: center;
+  padding-top: 3em;
+}
+
+.week7H3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: xx-large;
+  text-align: center;
+  color: #fff;
+  padding-top: 3em;
+  text-shadow: 3px 1px #FF6363;
+}
+
+.synthwave {
+  background: linear-gradient(0deg, #202040 20%, #0e0e24 100%);
+  position: relative;
+  box-shadow: 0 -20px 40px -20px #FF6363;
+}
+
+#mountains {
+  position: relative;
+  animation-name: slideInUp;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+}
+
+.sun {
+  width: 25vw;
+  height: 25vw;
+  position: absolute;
+  left: 50%;
+  bottom: 25%;
+  transform: translate(-50%, 0);
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 -21px 30px -21px #FF6363;
+  background: radial-gradient(circle, #202040 10%, #0e0e24 100%);
+}
+
+.sun:after {
+  content:'';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(0deg, #de9435 0%, #FFBD69 100%);
+}
+
+.sunLine {
+  top: 0;
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  animation: sunLinesSlide 6s ease-in infinite;
+}
+
+.sun .sunLine:nth-child(1) {
+  animation-delay: 0.6s;
+}
+.sun .sunLine:nth-child(2) {
+  animation-delay: 1.2s;
+}
+.sun .sunLine:nth-child(3) {
+  animation-delay: 1.8s;
+}
+.sun .sunLine:nth-child(4) {
+  animation-delay: 2.4s;
+}
+.sun .sunLine:nth-child(5) {
+  animation-delay: 3s;
+}
+.sun .sunLine:nth-child(6) {
+  animation-delay: 3.6s;
+}
+.sun .sunLine:nth-child(7) {
+  animation-delay: 4.2s;
+}
+.sun .sunLine:nth-child(8) {
+  animation-delay: 4.8s;
+}
+.sun .sunLine:nth-child(9) {
+  animation-delay: 5.4s;
+}
+.sun .sunLine:nth-child(10) {
+  animation-delay: 6s;
+}
+
+.plane {
+  z-index: 20;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  overflow: hidden;
+  border-top: 2px solid #FF6363;
+  box-shadow: 0 0 150px -60px #FF6363;
+  background: linear-gradient(0deg, #202040 60%, #543864 100%);
+}
+  
+.plane .planeLines {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.plane .planeLines .line {
+  box-shadow: 0 0 5px #FF6363;
+}
+
+.plane .planeLines .left {
+  width: 50%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  border-right: 1px solid #FF6363;
+}
+
+.plane .planeLines .left .line {
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  background: #FF6363;
+}
+
+.plane .planeLines .left .line:nth-child(2) {
+  right: 14%;
+  transform-origin: 100% 0%;
+  transform: skewX(-44deg);
+}
+
+.plane .planeLines .left .line:nth-child(3) {
+  right: 28%;
+  transform-origin: 100% 0%;
+  transform: skewX(-64deg);
+}
+
+.plane .planeLines .left .line:nth-child(4) {
+  right: 48%;
+  transform-origin: 100% 0%;
+  transform: skewX(-75deg);
+}
+
+.plane .planeLines .right {
+  width: 50%;
+  height: 100%;
+  right: 0;
+  position: absolute;
+  border-left: 1px solid #FF6363;
+}
+
+.plane .planeLines .right .line {
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  background: #FF6363;
+}
+.plane .planeLines .right .line:nth-child(1) {
+  left: 14%;
+  transform-origin: 100% 0%;
+  transform: skewX(44deg);
+}
+.plane .planeLines .right .line:nth-child(2) {
+  left: 28%;
+  transform-origin: 100% 0%;
+  transform: skewX(64deg);
+}
+.plane .planeLines .right .line:nth-child(3) {
+  left: 48%;
+  transform-origin: 100% 0%;
+  transform: skewX(75deg);
+}
+
+.plane .lines {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.plane .lines .line {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 90%;
+  background: #FF6363;
+  animation: linesSlide 3s ease-in infinite both;
+  box-shadow: 0 0 2px #FF6363;
+}
+.plane .lines .line:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.plane .lines .line:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.plane .lines .line:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.plane .lines .line:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.plane .lines .line:nth-child(5) {
+  animation-delay: 1.5s;
+}
+.plane .lines .line:nth-child(6) {
+  animation-delay: 1.8s;
+}
+.plane .lines .line:nth-child(7) {
+  animation-delay: 2.1s;
+}
+.plane .lines .line:nth-child(8) {
+  animation-delay: 2.4s;
+}
+.plane .lines .line:nth-child(9) {
+  animation-delay: 2.7s;
+}
+.plane .lines .line:nth-child(10) {
+  animation-delay: 3s;
+}
+
+@keyframes linesSlide {
+  from {
+    bottom: 100%;
+    height: 2px;
+  }
+  to {
+    bottom: -10px;
+    height: 10px;
+  }
+}
+@keyframes sunLinesSlide {
+  from {
+    top: 100%;
+    height: 2%;
+    background: #de9435;
+  }
+  to {
+    top: -38%;
+    height: 25%;
+    background: #FFBD69;
+  }
+}
