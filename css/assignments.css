@@ -156,7 +156,7 @@ figcaption {
 }
 
 .synthwave {
-  background: linear-gradient(0deg, #202040 20%, #0e0e24 100%);
+  background: linear-gradient(#03030c, #202040, #543864,  #FF6363, #FFBD69);
   position: relative;
   box-shadow: 0 -20px 40px -20px #FF6363;
 }
@@ -166,6 +166,7 @@ figcaption {
   animation-name: slideInUp;
   animation-duration: 4s;
   animation-timing-function: ease-in;
+  z-index: 1; 
 }
 
 .sun {
@@ -173,12 +174,12 @@ figcaption {
   height: 25vw;
   position: absolute;
   left: 50%;
-  bottom: 25%;
+  bottom: 39%;
   transform: translate(-50%, 0);
   border-radius: 100%;
   overflow: hidden;
   box-shadow: 0 -21px 30px -21px #FF6363;
-  background: radial-gradient(circle, #202040 10%, #0e0e24 100%);
+  background: linear-gradient(#202040, #543864,  #FF6363);
 }
 
 .sun:after {
@@ -187,8 +188,8 @@ figcaption {
   left: 0;
   top: 0;
   width: 100%;
-  height: 40%;
-  background: linear-gradient(0deg, #de9435 0%, #FFBD69 100%);
+  height: 30%;
+  background: linear-gradient(0deg, #FFBD69 0%, yellow 100%);
 }
 
 .sunLine {
@@ -378,11 +379,12 @@ figcaption {
   from {
     top: 100%;
     height: 2%;
-    background: #de9435;
+    background-color: #f38e8e;
   }
   to {
     top: -38%;
-    height: 25%;
-    background: #FFBD69;
+    height: 28%;
+    background-color: yellow;
+    mix-blend-mode: lighten;
   }
 }
